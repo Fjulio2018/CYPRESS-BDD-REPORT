@@ -40,20 +40,20 @@ To shop online
 #    Then    I see the "sucess" messagem "Olá, Xpto@msn.com"
 #
 ##  @focus
-#  Scenario Outline: Login Validation
-#
-#    Given   I am on the login screen
-#    When    I fill credential "<email>" and "<password>"
-#    Then    I see the "<type>" messagem "<mesagem>"
-#    Examples:
-#      | email        | password    | type    | mesagem          |
-#      | Xpto@msn.com | wrongpass   | error   | Senha inválida.  |
-#      | Xpto@msn.com | @123$4xp    | success | Login successful |
-#      | Xpto@msn.com | 111111@111  | error   | Senha inválida.  |
-#      | Xpto@msn.com | @123$4xp    | success | Login successful |
-#      | Xptomsn.com  | @123$4xp    | error   | E-mail inválido. |
-#      | Xpto@msn.com | wrongpass   | error   | Senha inválida.  |
-#      |              | @123$4xp    | error   | E-mail inválido. |
+  Scenario Outline: Login Validation
+
+    Given   I am on the login screen
+    When    I fill credential "<email>" and "<password>"
+    Then    I see the "<type>" messagem "<mesagem>"
+    Examples:
+      | email        | password    | type    | mesagem          |
+      | Xpto@msn.com | wrongpass   | error   | Senha inválida.  |
+      | Xpto@msn.com | @123$4xp    | success | Login successful |
+      | Xpto@msn.com | 111111@111  | error   | Senha inválida.  |
+      | Xpto@msn.com | @123$4xp    | success | Login successful |
+      | Xptomsn.com  | @123$4xp    | error   | E-mail inválido. |
+      | Xpto@msn.com | wrongpass   | error   | Senha inválida.  |
+      |              | @123$4xp    | error   | E-mail inválido. |
 
 
 
