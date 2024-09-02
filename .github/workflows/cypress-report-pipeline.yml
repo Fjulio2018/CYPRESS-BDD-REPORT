@@ -1,0 +1,35 @@
+name: Cypress Tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm start
+          wait-on: 'http://localhost:3000'
+          record: true
+          parallel: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Cucumber HTML Report
+        run: npm run generate-multi-cucumber-html-reporter
+
+      - name: Upload Cucumber HTML Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-html-report
+          path: path/to/report/directory
