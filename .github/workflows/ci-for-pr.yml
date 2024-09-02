@@ -1,4 +1,4 @@
-name: Cypress Tests for PR
+name: Cypress Tests for PR APP
 
 on:
   push:
