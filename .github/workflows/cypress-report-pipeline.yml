@@ -1,4 +1,4 @@
-name: Cypress CI Tests
+name: Cypress Cucumber CI Tests
 on: [push]
 jobs:
   cypress-run:
