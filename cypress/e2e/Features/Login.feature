@@ -10,7 +10,7 @@ To shop online
     Given   I am on the login screen
     When    I click on Login
     Then    I see the "error" messagem "E-mail inválido."
-
+#
 #
 #  Scenario: Login with the empty field email
 #    Given   I am on the login screen
