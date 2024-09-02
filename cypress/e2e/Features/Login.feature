@@ -10,6 +10,13 @@ To shop online
     Given   I am on the login screen
     When    I click on Login
     Then    I see the "error" messagem "E-mail inválido."
+
+    Scenario: Login with sucess
+    Given   I am on the login screen
+    And     fill "email" field with "Xpto@msn.com"
+    And     fill "password" field with "@123$4xp"
+    When    I click on Login
+    Then    I see the "sucess" messagem "Olá, Xpto@msn.com"
 #
 #
 #  Scenario: Login with the empty field email
