@@ -30,8 +30,10 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Test Results
+      - name: Upload Cypress Reports
         uses: actions/upload-artifact@v3
         with:
-          name: cypress-results
-          path: cypress/results/
+          name: cypress-reports
+          path: |
+            cypress/screenshots
+            cypress/videos
