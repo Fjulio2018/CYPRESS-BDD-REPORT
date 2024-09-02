@@ -5,7 +5,7 @@ As a client
 I want to log in to the application
 To shop online
 
-
+@focus
   Scenario: Login with the empty fields
     Given   I am on the login screen
     When    I click on Login
