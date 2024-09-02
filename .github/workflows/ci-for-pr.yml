@@ -19,11 +19,12 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Cypress run
+      - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
           start: npm start
-          wait-on: 'http://localhost:3000'  # Ajuste a URL do seu servidor, se necessário
+          wait-on: http://localhost:3000  # Ajuste a porta conforme necessário
+          wait-on-timeout: 120  # Tempo em segundos para aguardar o servidor iniciar
           record: true
           parallel: true
         env:
