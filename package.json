@@ -26,11 +26,10 @@
     }
   },
   "devDependencies": {
-    "multiple-cucumber-html-reporter": "^3.7.0"
-  },
-  "scripts": {
-    "start": "react-scripts start"
-
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "react-scripts": "^5.0.0"
   }
+
+
 
 }
