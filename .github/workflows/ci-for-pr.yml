@@ -1,9 +1,9 @@
 name: Cypress Tests for PR
 
 on:
-  pull_request:
+  push:
     branches:
-      - main  # Ou a branch que você está usando como base para os PRs
+      - main  # Altere para 'master' se for a branch principal
 
 jobs:
   cypress-run:
@@ -17,14 +17,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Dependencies
-        run: npm install  # Substituindo npm ci por npm install para evitar problemas de sincronização
+        run: npm ci
 
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
-          start: npm start
-          wait-on: http://localhost:3000  # Ajuste a porta conforme necessário
-          wait-on-timeout: 120  # Tempo em segundos para aguardar o servidor iniciar
           record: true
           parallel: true
         env:
