@@ -1,0 +1,492 @@
+[
+  {
+    "description": "Feature Description:\nAs a client\nI want to log in to the application\nTo shop online",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "login;login-with-the-empty-fields",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login with the empty fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 1223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 309000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-the-empty-field-email",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login with the empty field email",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "fill \"password\" field with \"@123$4xp\"",
+            "result": {
+              "status": "passed",
+              "duration": 461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-the-empty-field-password",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Login with the empty field password",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "fill \"email\" field with \"xpto@gmail.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 518000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I see the \"error\" messagem \"Senha inválida.\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-sucess",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Login with sucess",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "fill \"email\" field with \"Xpto@msn.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 491000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "fill \"password\" field with \"@123$4xp\"",
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 91000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I see the \"sucess\" messagem \"Olá, Xpto@msn.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 496000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"Xpto@msn.com\" and \"wrongpass\"",
+            "result": {
+              "status": "passed",
+              "duration": 815000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"error\" messagem \"Senha inválida.\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.invalid_input`, but never found it.\n    at Object.loginMsgValidator (cypress/support/Pages/LoginPage.cy.js:18:17)\n    at Context.eval (cypress/support/Spec_Definitions/Login_Spec.cy.js:28:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 550000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"Xpto@msn.com\" and \"@123$4xp\"",
+            "result": {
+              "status": "passed",
+              "duration": 826000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"success\" messagem \"Login successful\"",
+            "result": {
+              "status": "failed",
+              "error_message": "Error: Unknown message found\n    at Object.loginMsgValidator (cypress/support/Pages/LoginPage.cy.js:28:18)\n    at Context.eval (cypress/support/Spec_Definitions/Login_Spec.cy.js:28:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 544000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"Xpto@msn.com\" and \"111111@111\"",
+            "result": {
+              "status": "passed",
+              "duration": 860000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"error\" messagem \"Senha inválida.\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.invalid_input`, but never found it.\n    at Object.loginMsgValidator (cypress/support/Pages/LoginPage.cy.js:18:17)\n    at Context.eval (cypress/support/Spec_Definitions/Login_Spec.cy.js:28:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 559000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"Xpto@msn.com\" and \"@123$4xp\"",
+            "result": {
+              "status": "passed",
+              "duration": 822000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"success\" messagem \"Login successful\"",
+            "result": {
+              "status": "failed",
+              "error_message": "Error: Unknown message found\n    at Object.loginMsgValidator (cypress/support/Pages/LoginPage.cy.js:28:18)\n    at Context.eval (cypress/support/Spec_Definitions/Login_Spec.cy.js:28:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 582000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"Xptomsn.com\" and \"@123$4xp\"",
+            "result": {
+              "status": "passed",
+              "duration": 798000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 544000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"Xpto@msn.com\" and \"wrongpass\"",
+            "result": {
+              "status": "passed",
+              "duration": 834000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"error\" messagem \"Senha inválida.\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.invalid_input`, but never found it.\n    at Object.loginMsgValidator (cypress/support/Pages/LoginPage.cy.js:18:17)\n    at Context.eval (cypress/support/Spec_Definitions/Login_Spec.cy.js:28:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-validation",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Login Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I fill credential \"\" and \"@123$4xp\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` cannot accept an empty string. You need to actually type something.\n\nhttps://on.cypress.io/type\n    at Context.type (https://automationpratice.com.br/__cypress/runner/cypress_runner.js:115334:68)\n    at wrapped (https://automationpratice.com.br/__cypress/runner/cypress_runner.js:138450:19)\nFrom Your Spec Code:\n    at Object.compliteLogin (cypress/support/Pages/LoginPage.cy.js:64:13)\n    at Context.eval (cypress/support/Spec_Definitions/Login_Spec.cy.js:22:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
