@@ -35,16 +35,18 @@ jobs:
           path: |
             cypress/screenshots
             cypress/videos
+            cypress/cucumber-json/*.json
 
       - name: Send email with reports
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.mail.yahoo.com
+          server_address: smtp.gmail.com
           server_port: 587
-          username: ${{ secrets.SMTP_USER }}
-          password: ${{ secrets.SMTP_PASSWORD }}
+          username: ${{ secrets.GMAIL_USER }}
+          password: ${{ secrets.GMAIL_PASSWORD }}
           subject: Cypress Cucumber Test Reports
           body: Please find the attached test reports from the latest Cypress run.
           to: juliomariano2012@gmail.com
           from: juliomariano2005@yahoo.com.br
-          attachments: cypress/cucumber-json/*.json
+          attachments: |
+            cypress/cucumber-json/*.json
