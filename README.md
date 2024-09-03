@@ -1,6 +1,6 @@
 # Cypress BDD com Multiple Report
 
-Projeto com o escopo de implementar Cypres com o Cucumber e o Multiple-cucumber-html-report.
+Projeto com o escopo de implementar Cypress com o Cucumber e o Multiple-cucumber-html-report.
 
 Objetivos:
 - Criar projeto Cypress BDD.
