@@ -9,9 +9,99 @@
     "uri": "Login.feature",
     "elements": [
       {
+        "id": "login;login-with-the-empty-fields",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login with the empty fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 727000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 293000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-the-empty-field-email",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Login with the empty field email",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I am on the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 1722000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "fill \"password\" field with \"@123$4xp\"",
+            "result": {
+              "status": "passed",
+              "duration": 464000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
         "id": "login;login-validation",
         "keyword": "Scenario",
-        "line": 45,
+        "line": 48,
         "name": "Login Validation",
         "tags": [],
         "type": "scenario",
@@ -19,31 +109,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 39,
+            "line": 42,
             "name": "I am on the login screen",
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 1410000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 40,
+            "line": 43,
             "name": "I fill credential \"Xpto@msn.com\" and \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 856000000
+              "duration": 846000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 44,
             "name": "I see the \"success\" messagem \"Olá, Xpto@msn.com\"",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 8000000
             }
           }
         ]

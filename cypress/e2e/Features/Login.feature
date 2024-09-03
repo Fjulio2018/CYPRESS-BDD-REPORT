@@ -5,20 +5,23 @@ As a client
 I want to log in to the application
 To shop online
 
-#    @focus
-#    Scenario: Login with the empty fields
-#    Given   I am on the login screen
-#    When    I click on Login
-#    Then    I see the "error" messagem "E-mail inválido."
-#
-#
-#
-#  Scenario: Login with the empty field email
-#    Given   I am on the login screen
-#    And     fill "password" field with "@123$4xp"
-#    When    I click on Login
-#    Then    I see the "error" messagem "E-mail inválido."
-#
+    
+    Scenario: Login with the empty fields
+    Given   I am on the login screen
+    When    I click on Login
+    Then    I see the "error" messagem "E-mail inválido."
+
+
+
+  Scenario: Login with the empty field email
+    Given   I am on the login screen
+    And     fill "password" field with "@123$4xp"
+    When    I click on Login
+    Then    I see the "error" messagem "E-mail inválido."
+
+  #Application with a bug related to 2 scenarios.
+
+
 #  Scenario: Login with the empty field password
 #    Given   I am on the login screen
 #    And     fill "email" field with "xpto@gmail.com"
