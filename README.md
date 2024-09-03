@@ -5,8 +5,8 @@ Projeto com o escopo de implementar Cypress com o Cucumber e o Multiple-cucumber
 Objetivos:
 - Criar projeto Cypress BDD.
 - Report com gráficos explicativos.
-- Contruir um ambiente próximo ao de desenvolvimento.
-- Conceitos GIT como pull da MAIM, push na DEV e merge na MAIN.
+- Construir um ambiente próximo ao de desenvolvimento.
+- Conceitos do GIT como pull da MAIM, push na DEV e merge na MAIN.
 
 ## Instalação
 
