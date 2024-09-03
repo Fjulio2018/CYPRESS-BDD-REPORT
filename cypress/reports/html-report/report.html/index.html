@@ -820,7 +820,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">11</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -831,7 +831,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">45.45 %</td>
+                        <td class="percentage">33.33 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -840,11 +840,21 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">54.55 %</td>
+                        <td class="percentage">33.33 %</td>
                     
                     
                     </tr>
                     
+                    
+                    <tr>
+                        <td>
+                            <p data-toggle="tooltip" data-placement="left" title="Scenario is skipped">
+                                <i class="fa fa-arrow-circle-right skipped-color"></i>
+                                Skipped
+                            </p>
+                        </td>
+                        <td class="percentage">33.33 %</td>
+                    </tr>
                     
                 </table>
             </td>
@@ -949,6 +959,8 @@ input#darkCheck:checked ~ label>svg#moon {
                         <th>Passed</th>
                         <th>Failed</th>
                         
+                        <th>Skip</th>
+                        
                         
                         
                         
@@ -959,7 +971,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                     <tr>
                         <td>
-                            <a href="features/0aec91ef-e12d-4c10-9988-bbeb56a68060-login.html">Login</a>
+                            <a href="features/fc4c5057-c619-4629-9d54-fef4f9ee0694-login.html">Login</a>
                         </td>
                         <td class="text-center">
                             
@@ -977,17 +989,10 @@ input#darkCheck:checked ~ label>svg#moon {
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+                            <i class="fa fa-tag fa-lg" data-toggle="tooltip" data-placement="top"
+                               title="@focus">
+                                <span>@focus</span>
+                            </i>
                             
                             
                         </td>
@@ -1049,9 +1054,11 @@ input#darkCheck:checked ~ label>svg#moon {
                         
                         
                         
-                        <td class="text-right ">11</td>
-                        <td class="text-right ">5</td>
-                        <td class="text-right ">6</td>
+                        <td class="text-right ">3</td>
+                        <td class="text-right ">1</td>
+                        <td class="text-right ">1</td>
+                        
+                        <td class="text-right ">1</td>
                         
                         
                         
@@ -1163,10 +1170,10 @@ input#darkCheck:checked ~ label>svg#moon {
                         ],
                         datasets: [{
                             data: [
-                                5,
-                                6,
+                                1,
+                                1,
                                 0,
-                                0,
+                                1,
                                 0,
                                 0
                             ],

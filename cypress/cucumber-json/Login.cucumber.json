@@ -9,46 +9,41 @@
     "uri": "Login.feature",
     "elements": [
       {
-        "id": "login;login-with-the-empty-fields",
+        "id": "login;login-validation",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "Login with the empty fields",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 8
-          }
-        ],
+        "line": 45,
+        "name": "Login Validation",
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 39,
             "name": "I am on the login screen",
             "result": {
               "status": "passed",
-              "duration": 1226000000
+              "duration": 599000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
-            "name": "I click on Login",
+            "line": 40,
+            "name": "I fill credential \"Xpto@msn.com\" and \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 319000000
+              "duration": 856000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "line": 41,
+            "name": "I see the \"success\" messagem \"Olá, Xpto@msn.com\"",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 13000000
             }
           }
         ]
