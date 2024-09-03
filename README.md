@@ -7,6 +7,7 @@ Objetivos:
 - Report com gráficos explicativos.
 - Construir um ambiente próximo ao de desenvolvimento.
 - Conceitos do GIT como pull da MAIM, push na DEV e merge na MAIN.
+- Conceitos de CI para executar testes antes do merge na MAIN.
 
 ## Instalação
 
