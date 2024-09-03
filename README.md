@@ -2,11 +2,11 @@
 
 Projeto com o escopo de implementar Cypres com o Cucumber e o Multiple-cucumber-html-report.
 
-Objetivo:
+Objetivos:
 - Criar projeto Cypres BDD.
 - Report com gráficos explicativos.
 - Contruir um ambiente próximo ao de desenvolvimento.
-- Conceitos GIT, pull da MAIM, push na DEV e merge na MAIN.
+- Conceitos GIT como pull da MAIM, push na DEV e merge na MAIN.
 
 ## Instalação
 
