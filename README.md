@@ -1,6 +1,12 @@
 # Cypress BDD com Multiple Report
 
-Projeto com o escopo de implementar Cypres com o Cucumber e o Multiple-cucumber-html-reporter
+Projeto com o escopo de implementar Cypres com o Cucumber e o Multiple-cucumber-html-report.
+
+Objetivos:
+- Criar projeto Cypres BDD.
+- Report com gráficos explicativos.
+- Contruir um ambiente próximo ao de desenvolvimento.
+- Conceitos GIT como pull da MAIM, push na DEV e merge na MAIN.
 
 ## Instalação
 
