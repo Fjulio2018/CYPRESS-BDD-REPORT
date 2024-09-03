@@ -17,8 +17,9 @@ export default {
             cy.get('.invalid_input')
                 .should('have.text', msg)
 
-        } else if (type === 'sucess') {
+        } else if (type === 'success') {
             console.log('Tipo:', type);
+            console.log('MSG:', msg);
 
             cy.get('#swal2-html-container')
                 .should('have.text', msg)

@@ -5,7 +5,7 @@ As a client
 I want to log in to the application
 To shop online
 
-    @focus
+    
     Scenario: Login with the empty fields
     Given   I am on the login screen
     When    I click on Login
@@ -18,7 +18,10 @@ To shop online
     And     fill "password" field with "@123$4xp"
     When    I click on Login
     Then    I see the "error" messagem "E-mail inválido."
-#
+
+  #Application with a bug related to 2 scenarios.
+
+
 #  Scenario: Login with the empty field password
 #    Given   I am on the login screen
 #    And     fill "email" field with "xpto@gmail.com"
@@ -38,11 +41,11 @@ To shop online
 
     Given   I am on the login screen
     When    I fill credential "<email>" and "<password>"
-    Then    I see the "<type>" messagem "<mesagem>"
+    Then    I see the "<type>" messagem "<messagem>"
     Examples:
-      | email        | password    | type    | mesagem          |
+      | email        | password    | type    | messagem          |
 #      | Xpto@msn.com | wrongpass   | error   | Senha inválida.  |
-      | Xpto@msn.com | @123$4xp    | success | Login successful |
+      | Xpto@msn.com | @123$4xp    | success | Olá, Xpto@msn.com |
 #      | Xpto@msn.com | 111111@111  | error   | Senha inválida.  |
 #      | Xpto@msn.com | @123$4xp    | success | Login successful |
 #      | Xptomsn.com  | @123$4xp    | error   | E-mail inválido. |
