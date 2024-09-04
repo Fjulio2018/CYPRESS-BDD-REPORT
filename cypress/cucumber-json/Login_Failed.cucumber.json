@@ -11,7 +11,7 @@
       {
         "id": "login-failed;login-with-the-credentials--field-left-empty",
         "keyword": "Scenario",
-        "line": 9,
+        "line": 12,
         "name": "Login with the credentials  field left empty",
         "tags": [],
         "type": "scenario",
@@ -19,31 +19,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
-            "name": "I am on the login screen",
+            "line": 9,
+            "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 1209000000
+              "duration": 1140000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 14,
             "name": "I click on Login",
             "result": {
               "status": "passed",
-              "duration": 274000000
+              "duration": 281000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 15,
             "name": "I see the \"error\" messagem \"E-mail inválido.\"",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 8000000
             }
           }
         ]
@@ -51,7 +51,7 @@
       {
         "id": "login-failed;login-with-the-email-field-left-empty",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 19,
         "name": "Login with the email field left empty",
         "tags": [],
         "type": "scenario",
@@ -59,77 +59,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
-            "name": "I am on the login screen",
+            "line": 9,
+            "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 605000000
+              "duration": 574000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
+            "line": 21,
             "name": "fill \"password\" field with \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 375000000
+              "duration": 376000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
-            "name": "I click on Login",
-            "result": {
-              "status": "passed",
-              "duration": 63000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
-            "result": {
-              "status": "passed",
-              "duration": 5000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "login-failed;login-with-the-password-field-left-empty",
-        "keyword": "Scenario",
-        "line": 25,
-        "name": "Login with the password field left empty",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 26,
-            "name": "I am on the login screen",
-            "result": {
-              "status": "passed",
-              "duration": 507000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "fill \"email\" field with \"xpto@gmail.com\"",
-            "result": {
-              "status": "passed",
-              "duration": 358000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
+            "line": 22,
             "name": "I click on Login",
             "result": {
               "status": "passed",
@@ -139,51 +89,61 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 29,
-            "name": "I see the \"error\" messagem \"Senha inválida.\"",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "login-failed;login-field-validation",
-        "keyword": "Scenario",
-        "line": 44,
-        "name": "Login Field Validation",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 34,
-            "name": "I am on the login screen",
-            "result": {
-              "status": "passed",
-              "duration": 511000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 35,
-            "name": "I fill credentials \"\" and \"@123$4xp\"",
-            "result": {
-              "status": "passed",
-              "duration": 435000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
+            "line": 23,
             "name": "I see the \"error\" messagem \"E-mail inválido.\"",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-failed;login-with-the-password-field-left-empty",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Login with the password field left empty",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
+            "result": {
+              "status": "passed",
+              "duration": 509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "fill \"email\" field with \"xpto@gmail.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 366000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I click on Login",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I see the \"error\" messagem \"Senha inválida.\"",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
             }
           }
         ]
@@ -191,7 +151,7 @@
       {
         "id": "login-failed;login-field-validation",
         "keyword": "Scenario",
-        "line": 45,
+        "line": 47,
         "name": "Login Field Validation",
         "tags": [],
         "type": "scenario",
@@ -199,31 +159,71 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 34,
-            "name": "I am on the login screen",
+            "line": 9,
+            "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 499000000
+              "duration": 503000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 35,
-            "name": "I fill credentials \"Xpto@msn.com\" and \"\"",
+            "line": 38,
+            "name": "I fill credentials \"\" and \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 424000000
+              "duration": 420000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 39,
+            "name": "I see the \"error\" messagem \"E-mail inválido.\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-failed;login-field-validation",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Login Field Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
+            "result": {
+              "status": "passed",
+              "duration": 515000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I fill credentials \"Xpto@msn.com\" and \"\"",
+            "result": {
+              "status": "passed",
+              "duration": 419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
             "name": "I see the \"error\" messagem \"Senha inválida.\"",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 7000000
             }
           }
         ]

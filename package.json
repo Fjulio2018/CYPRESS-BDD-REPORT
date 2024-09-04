@@ -13,7 +13,8 @@
   "description": "",
   "dependencies": {
     "cypress": "^13.14.1",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "dotenv": "^16.4.5"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
@@ -28,7 +29,4 @@
   "devDependencies": {
     "multiple-cucumber-html-reporter": "^3.7.0"
   }
-
-
-
 }

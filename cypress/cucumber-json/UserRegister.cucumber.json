@@ -1,0 +1,54 @@
+[
+  {
+    "description": "Feature Description:\nAs a client\nI want register on aplication\nTo shop online",
+    "keyword": "Feature",
+    "name": "Register user on site",
+    "line": 1,
+    "id": "register-user-on-site",
+    "tags": [],
+    "uri": "UserRegister.feature",
+    "elements": [
+      {
+        "id": "register-user-on-site;user-register-with-success",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "User Register with success",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
+            "result": {
+              "status": "passed",
+              "duration": 1594000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I register the user \"Ira\", \"Dias de Luta\",\"Xpto@msn.com\",\"@123$4xp\",\"55199935562\".",
+            "result": {
+              "status": "passed",
+              "duration": 1572000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I see the \"success\" register messagem \"Your Account Has Been Created!\"",
+            "result": {
+              "status": "failed",
+              "duration": 54000000,
+              "error_message": "AssertionError: expected 'Register Account' to include 'Your Account Has Been Created!'\n    at Context.eval (cypress/support/Spec_Definitions/Open_register_Spec.cy.js:37:38)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

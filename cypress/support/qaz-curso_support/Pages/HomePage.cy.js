@@ -2,15 +2,15 @@
 
 
 export default {
-    acessLogin() {
-        cy.visit('/')
+    acessLogin(uriKey) {
+        const baseUrl = Cypress.env(uriKey);
+        cy.visit(baseUrl);
 
         cy.get('#top_header')
 
         cy.get('.fa-user')
             .click()
     },
-
 
 
 }
