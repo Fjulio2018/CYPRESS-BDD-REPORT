@@ -18,7 +18,7 @@ When("I click on Login", () => {
     login_page.clickLoginButton();
 
 })
-When("I fill credential {string} and {string}", (email,password) => {
+When("I fill credentials {string} and {string}", (email,password) => {
     login_page.compliteLogin(email,password);
 })
 
