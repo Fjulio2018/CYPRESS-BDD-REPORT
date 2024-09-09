@@ -1,11 +1,11 @@
 /// <reference types="cypress"/>
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
-import home_page from "../Pages/HomePage.cy";
-import login_page from "../Pages/LoginPage.cy";
+import home_page from "../qaz-curso_support/Pages/HomePage.cy";
+import login_page from "../qaz-curso_support/Pages/LoginPage.cy";
 
 
-Given("I am on the login screen", () => {
-    home_page.acessLogin();
+Given("I am on the login screen from {string}", (uriKey) => {
+    home_page.acessLogin(uriKey);
 
 })
 

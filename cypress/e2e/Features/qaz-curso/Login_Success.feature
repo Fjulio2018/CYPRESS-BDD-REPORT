@@ -5,11 +5,12 @@ As a client
 I want to log in to the application
 To shop online
 
-
+  Background:
+    Given   I am on the login screen from "Base_URI_QAZANDO"
 
 
   Scenario: Login with sucess
-    Given   I am on the login screen
+
     And     fill "email" field with "Xpto@msn.com"
     And     fill "password" field with "@123$4xp"
     When    I click on Login
@@ -18,12 +19,12 @@ To shop online
 
   Scenario Outline: Login Success Validation
 
-    Given   I am on the login screen
+
     When    I fill credentials "<email>" and "<password>"
     Then    I see the "<type>" messagem "<messagem>"
     Examples:
-      | email        | password    | type    | messagem          |
-      | Xpto@msn.com | @123$4xp    | success | Olá, Xpto@msn.com |
+      | email        | password | type    | messagem          |
+      | Xpto@msn.com | @123$4xp | success | Olá, Xpto@msn.com |
 
 
 

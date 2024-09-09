@@ -5,16 +5,19 @@ As a client
 I want to test with Failed validations
 To shop online
 
+  Background:
+    Given   I am on the login screen from "Base_URI_QAZANDO"
+
 
     Scenario: Login with the credentials  field left empty
-    Given   I am on the login screen
+
     When    I click on Login
     Then    I see the "error" messagem "E-mail inválido."
 
 
 
   Scenario: Login with the email field left empty
-    Given   I am on the login screen
+
     And     fill "password" field with "@123$4xp"
     When    I click on Login
     Then    I see the "error" messagem "E-mail inválido."
@@ -23,7 +26,7 @@ To shop online
 
 
   Scenario: Login with the password field left empty
-    Given   I am on the login screen
+
     And     fill "email" field with "xpto@gmail.com"
     When    I click on Login
     Then    I see the "error" messagem "Senha inválida."
@@ -31,7 +34,7 @@ To shop online
 
   Scenario Outline: Login Field Validation
 
-    Given   I am on the login screen
+
     When    I fill credentials "<email>" and "<password>"
     Then    I see the "<type>" messagem "<messagem>"
     Examples:

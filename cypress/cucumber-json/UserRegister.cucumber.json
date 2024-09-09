@@ -1,0 +1,63 @@
+[
+  {
+    "description": "Feature Description:\nAs a client\nI want register on aplication\nTo shop online",
+    "keyword": "Feature",
+    "name": "Register user on site",
+    "line": 1,
+    "id": "register-user-on-site",
+    "tags": [],
+    "uri": "UserRegister.feature",
+    "elements": [
+      {
+        "id": "register-user-on-site;user-register-validation",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "User Register Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
+            "result": {
+              "status": "passed",
+              "duration": 1659000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I register the user \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\".",
+            "result": {
+              "status": "passed",
+              "duration": 2194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I see the \"already-existent\" user register messagem \"Warning: E-Mail Address is already registered!\"",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I double check in data register \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\",\"already-existent\".",
+            "result": {
+              "status": "passed",
+              "duration": 3937000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
