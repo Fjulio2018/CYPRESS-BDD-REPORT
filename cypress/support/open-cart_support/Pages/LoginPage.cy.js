@@ -1,4 +1,5 @@
-import {TestDataUtil} from '../../utils/TestDataUtil';
+
+import RegisterPageCy from '../Pages/RegisterPage.cy';
 class LoginPageCy {
 
     webLocators = {
@@ -31,16 +32,15 @@ class LoginPageCy {
     }
 
     loginAlreadyRegistrationUser(email, password){
-        const userData = TestDataUtil.generateUserData();
-        const generatedEmail = email || this.userData.email;
-        const generatedPassword = password || this.userData.password;
-        cy.get('.list-inline > .dropdown').click();
-        cy.get('.dropdown-menu > :nth-child(2) > a').click()
-        cy.get('#input-email').type(generatedEmail);
-        cy.get('#input-password').type(generatedPassword);
+
+
+        cy.get('#input-email').type(email);
+        cy.get('#input-password').type(password);
         cy.get('form > .btn').click();
 
     }
+
+
 
 }
 

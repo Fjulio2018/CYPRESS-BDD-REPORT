@@ -23,7 +23,7 @@
             "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
             "result": {
               "status": "passed",
-              "duration": 1659000000
+              "duration": 1574000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I register the user \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\".",
             "result": {
               "status": "passed",
-              "duration": 2194000000
+              "duration": 2137000000
             }
           },
           {
@@ -43,17 +43,67 @@
             "name": "I see the \"already-existent\" user register messagem \"Warning: E-Mail Address is already registered!\"",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 17000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "I double check in data register \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\",\"already-existent\".",
+            "name": "I double check in data register with \"already-existent\".",
             "result": {
               "status": "passed",
-              "duration": 3937000000
+              "duration": 3971000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-on-site;user-register-validation",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "User Register Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
+            "result": {
+              "status": "passed",
+              "duration": 883000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I register the user \"\", \"\",\"\",\"\",\"\".",
+            "result": {
+              "status": "passed",
+              "duration": 2750000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I see the \"non-existent\" user register messagem \"Your Account Has Been Created!\"",
+            "result": {
+              "status": "passed",
+              "duration": 597000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I double check in data register with \"non-existent\".",
+            "result": {
+              "status": "passed",
+              "duration": 1129000000
             }
           }
         ]
