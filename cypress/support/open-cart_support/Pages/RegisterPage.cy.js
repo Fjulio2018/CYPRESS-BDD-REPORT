@@ -1,10 +1,12 @@
 import { TestDataUtil } from '../../utils/TestDataUtil';
+import LoginPageCy from './LoginPage.cy'
 
 class RegisterPageCy {
 
     constructor() {
 
         this.userData = TestDataUtil.generateUserData();
+        this.usedData1= null;
     }
 
     webLocators = {
@@ -25,6 +27,11 @@ class RegisterPageCy {
             contactLink: 'a'
         }
     }
+    webLocatorsLogin = {
+        email: "#input-email",
+        password: "#input-password",
+        loginButton: "input[type='submit'][value='Login']"
+    };
 
 
     visitRegisterPage(url) {
@@ -54,6 +61,7 @@ class RegisterPageCy {
 
 
         this.usedData = dataToUse;
+        this.usedData1= dataToUse;
     }
 
 
@@ -89,12 +97,23 @@ class RegisterPageCy {
         cy.get(this.webLocators.myAccountLink).click();
         cy.get(this.webLocators.editAccountLink).click();
 
-        // Valida os dados usados no registro (armazenados em this.usedData)
+
         cy.get(this.webLocators.firstName).should('have.value', this.usedData.firstName);
         cy.get(this.webLocators.lastName).should('have.value', this.usedData.lastName);
         cy.get(this.webLocators.email).should('have.value', this.usedData.email);
         cy.get(this.webLocators.telephone).should('have.value', this.usedData.telephone);
     }
+
+
+
+    loginAlready(){
+        const loginPage = new LoginPageCy();
+        cy.get('.list-inline > .dropdown').click();
+        cy.get('.dropdown-menu > :nth-child(2) > a').click()
+        loginPage.loginAlreadyRegistrationUser(this.usedData.email,this.usedData.password)
+    };
+
+
 }
 
 export default RegisterPageCy;

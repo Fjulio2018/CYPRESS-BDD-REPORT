@@ -13,12 +13,12 @@ To shop online
 
     When I register the user "<FirstName>", "<LastName>","<email>","<password>","<Telephone>".
     Then I see the "<UserOfData>" user register messagem "<messagem>"
-    And  I double check in data register "<FirstName>", "<LastName>","<email>","<password>","<Telephone>","<UserOfData>".
+    And  I double check in data register with "<UserOfData>".
 
     Examples:
       | FirstName | LastName  | email           | password | Telephone   | UserOfData       | messagem                                       |
       | First q   | last    q | XptoqFL@msn.com | @123$4xp | 55199944462 | already-existent | Warning: E-Mail Address is already registered! |
-#      |           |           |                 |          |             | non-existent     | Your Account Has Been Created!                 |
+      |           |           |                 |          |             | non-existent     | Your Account Has Been Created!                 |
 
 
 
