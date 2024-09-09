@@ -9,10 +9,10 @@
     "uri": "UserRegister.feature",
     "elements": [
       {
-        "id": "register-user-on-site;user-register-with-success",
+        "id": "register-user-on-site;user-register-validation",
         "keyword": "Scenario",
-        "line": 19,
-        "name": "User Register with success",
+        "line": 20,
+        "name": "User Register Validation",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,28 +23,37 @@
             "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
             "result": {
               "status": "passed",
-              "duration": 1594000000
+              "duration": 1659000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 14,
-            "name": "I register the user \"Ira\", \"Dias de Luta\",\"Xpto@msn.com\",\"@123$4xp\",\"55199935562\".",
+            "name": "I register the user \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\".",
             "result": {
               "status": "passed",
-              "duration": 1572000000
+              "duration": 2194000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "I see the \"success\" register messagem \"Your Account Has Been Created!\"",
+            "name": "I see the \"already-existent\" user register messagem \"Warning: E-Mail Address is already registered!\"",
             "result": {
-              "status": "failed",
-              "duration": 54000000,
-              "error_message": "AssertionError: expected 'Register Account' to include 'Your Account Has Been Created!'\n    at Context.eval (cypress/support/Spec_Definitions/Open_register_Spec.cy.js:37:38)"
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I double check in data register \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\",\"already-existent\".",
+            "result": {
+              "status": "passed",
+              "duration": 3937000000
             }
           }
         ]
