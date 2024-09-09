@@ -6,7 +6,7 @@ class LoginPageCy {
         email: "#input-email",
         password: "#input-password",
         loginButton: "input[type='submit'][value='Login']"
-    };
+    }
 
     visitLoginPage(url) {
         cy.visit(url);
@@ -32,7 +32,6 @@ class LoginPageCy {
     }
 
     loginAlreadyRegistrationUser(email, password){
-
 
         cy.get('#input-email').type(email);
         cy.get('#input-password').type(password);
