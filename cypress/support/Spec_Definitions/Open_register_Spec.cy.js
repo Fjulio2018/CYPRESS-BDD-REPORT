@@ -22,7 +22,8 @@ Then(/^I see the "([^"]*)" user register messagem "([^"]*)"$/, (UserOfData, mess
         registerPage.validateRegistrationSuccess();
         cy.url().should('include', 'contact');
     } else if (UserOfData === 'already-existent') {
-        cy.get('.alert').should('be.visible')
+        cy.get('.alert')
+            .should('be.visible')
             .and('contain', message);
     }
 });
@@ -33,7 +34,7 @@ Then(/^I double check in data register with "([^"]*)"\.$/, function (UserOfData)
     if (UserOfData === 'non-existent') {
         registerPage.verifyDataInEditForm();
     } else if (UserOfData === 'already-existent') {
-        registerPage.loginAlready()
+        registerPage.loginAlready();
         registerPage.verifyDataInEditForm();
     }
 

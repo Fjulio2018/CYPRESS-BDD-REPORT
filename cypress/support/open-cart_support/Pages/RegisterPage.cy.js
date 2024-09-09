@@ -1,5 +1,5 @@
 import { TestDataUtil } from '../../utils/TestDataUtil';
-import LoginPageCy from './LoginPage.cy'
+import LoginPageCy from './LoginPage.cy';
 
 class RegisterPageCy {
 
@@ -74,7 +74,8 @@ class RegisterPageCy {
         };
 
         cy.get('#content').within(() => {
-            cy.get(this.webLocators.successMessages.h1).should('contain', successMessages.created);
+            cy.get(this.webLocators.successMessages.h1)
+                .should('contain', successMessages.created);
             cy.get('p').eq(0)
                 .should('be.visible')
                 .and('contain', successMessages.congrats);
@@ -98,10 +99,14 @@ class RegisterPageCy {
         cy.get(this.webLocators.editAccountLink).click();
 
 
-        cy.get(this.webLocators.firstName).should('have.value', this.usedData.firstName);
-        cy.get(this.webLocators.lastName).should('have.value', this.usedData.lastName);
-        cy.get(this.webLocators.email).should('have.value', this.usedData.email);
-        cy.get(this.webLocators.telephone).should('have.value', this.usedData.telephone);
+        cy.get(this.webLocators.firstName)
+            .should('have.value', this.usedData.firstName);
+        cy.get(this.webLocators.lastName)
+            .should('have.value', this.usedData.lastName);
+        cy.get(this.webLocators.email)
+            .should('have.value', this.usedData.email);
+        cy.get(this.webLocators.telephone)
+            .should('have.value', this.usedData.telephone);
     }
 
 
