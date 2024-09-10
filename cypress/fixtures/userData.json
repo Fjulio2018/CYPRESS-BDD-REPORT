@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Franco",
+      "lastName": "Brown",
+      "email": "mnyetcbrq@test.com",
+      "password": "Pass@389",
+      "phone": "+5554967075036"
+    },
+    {
+      "id": 2,
+      "firstName": "Franco",
+      "lastName": "Mendes",
+      "email": "cngqsislo@test.com",
+      "password": "Pass@132",
+      "phone": "+5547127936220"
+    },
+    {
+      "id": 3,
+      "firstName": "Franco",
+      "lastName": "Doe",
+      "email": "ajnucycvm@test.com",
+      "password": "Pass@425",
+      "phone": "+5545280256703"
+    },
+    {
+      "id": 4,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "p6z0uzsvp@test.com",
+      "password": "Pass@603",
+      "phone": "+5581944366603"
+    },
+    {
+      "id": 5,
+      "firstName": "John",
+      "lastName": "Williams",
+      "email": "fb6tavoyj@test.com",
+      "password": "Pass@35",
+      "phone": "+5511536383213"
+    },
+    {
+      "id": 6,
+      "firstName": "Franco",
+      "lastName": "Smith",
+      "email": "eozf0f6fu@test.com",
+      "password": "Pass@567",
+      "phone": "+5531324998605"
+    },
+    {
+      "id": 7,
+      "firstName": "Franco",
+      "lastName": "Brown",
+      "email": "7raagn07k@test.com",
+      "password": "Pass@704",
+      "phone": "+5555378107569"
+    },
+    {
+      "id": 8,
+      "firstName": "Michael",
+      "lastName": "Smith",
+      "email": "6qn4idjwd@test.com",
+      "password": "Pass@962",
+      "phone": "+5511770550038"
+    },
+    {
+      "id": 9,
+      "firstName": "Sonia",
+      "lastName": "Gagary",
+      "email": "42mqdsar7@test.com",
+      "password": "Pass@112",
+      "phone": "+5546705483208"
+    },
+    {
+      "id": 10,
+      "firstName": "Sophia",
+      "lastName": "Marvel",
+      "email": "dppf1f4mm@test.com",
+      "password": "Pass@849",
+      "phone": "+5551304859713"
+    },
+    {
+      "id": 11,
+      "firstName": "Jane",
+      "lastName": "Mendes",
+      "email": "8l0hfhwug@test.com",
+      "password": "Pass@328",
+      "phone": "+5555434940786"
+    },
+    {
+      "id": 12,
+      "firstName": "Sophia",
+      "lastName": "Smith",
+      "email": "fyrhbcy1f@test.com",
+      "password": "Pass@255",
+      "phone": "+5537050677528"
+    },
+    {
+      "id": 13,
+      "firstName": "Mateus",
+      "lastName": "Smith",
+      "email": "7p0uwrw2t@test.com",
+      "password": "Pass@930",
+      "phone": "+5534940454429"
+    },
+    {
+      "id": 14,
+      "firstName": "Sonia",
+      "lastName": "Gagary",
+      "email": "4glysoicp@test.com",
+      "password": "Pass@505",
+      "phone": "+5538059225099"
+    }
+  ]
+}
