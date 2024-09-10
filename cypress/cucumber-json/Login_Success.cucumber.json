@@ -11,7 +11,7 @@
       {
         "id": "login-success;login-with-sucess",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 12,
         "name": "Login with sucess",
         "tags": [],
         "type": "scenario",
@@ -23,43 +23,43 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 1036000000
+              "duration": 1067000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
+            "line": 14,
             "name": "fill \"email\" field with \"Xpto@msn.com\"",
             "result": {
               "status": "passed",
-              "duration": 362000000
+              "duration": 363000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 15,
             "name": "fill \"password\" field with \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 153000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
+            "line": 16,
             "name": "I click on Login",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 80000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 17,
             "name": "I see the \"success\" messagem \"Olá, Xpto@msn.com\"",
             "result": {
               "status": "passed",
@@ -71,7 +71,7 @@
       {
         "id": "login-success;login-success-validation",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 27,
         "name": "Login Success Validation",
         "tags": [],
         "type": "scenario",
@@ -83,27 +83,27 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 788000000
+              "duration": 580000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 25,
+            "line": 23,
             "name": "I fill credentials \"Xpto@msn.com\" and \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 576000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 24,
             "name": "I see the \"success\" messagem \"Olá, Xpto@msn.com\"",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           }
         ]

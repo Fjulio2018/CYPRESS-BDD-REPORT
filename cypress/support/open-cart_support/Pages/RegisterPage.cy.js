@@ -3,11 +3,7 @@ import LoginPageCy from './LoginPage.cy';
 
 class RegisterPageCy {
 
-    constructor() {
 
-        this.userData = TestDataUtil.generateUserData();
-        this.usedData1= null;
-    }
 
     webLocators = {
         firstName: "#input-firstname",
@@ -35,18 +31,20 @@ class RegisterPageCy {
 
 
     visitRegisterPage(url) {
+        cy.log('Esta é e URL: ', url)
         cy.visit(url);
     }
 
 
     fillRegistrationForm(firstName, lastName, email, telephone, password) {
 
+
         const dataToUse = {
-            firstName: firstName || this.userData.firstName,
-            lastName: lastName || this.userData.lastName,
-            email: email || this.userData.email,
-            telephone: telephone || this.userData.phone,
-            password: password || this.userData.password
+            firstName: firstName ,
+            lastName: lastName ,
+            email: email ,
+            telephone: telephone ,
+            password: password
         };
 
 
@@ -61,7 +59,7 @@ class RegisterPageCy {
 
 
         this.usedData = dataToUse;
-        this.usedData1= dataToUse;
+        // this.usedData1= dataToUse;
     }
 
 

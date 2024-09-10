@@ -23,7 +23,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 1140000000
+              "duration": 728000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I click on Login",
             "result": {
               "status": "passed",
-              "duration": 281000000
+              "duration": 297000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I see the \"error\" messagem \"E-mail inválido.\"",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 10000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 574000000
+              "duration": 539000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "fill \"password\" field with \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 376000000
+              "duration": 366000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I see the \"error\" messagem \"E-mail inválido.\"",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           }
         ]
@@ -113,7 +113,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 509000000
+              "duration": 558000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "I see the \"error\" messagem \"Senha inválida.\"",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 6000000
             }
           }
         ]
@@ -163,7 +163,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 503000000
+              "duration": 509000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "I fill credentials \"\" and \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 420000000
+              "duration": 410000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "I see the \"error\" messagem \"E-mail inválido.\"",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           }
         ]
@@ -203,7 +203,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 515000000
+              "duration": 519000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "I fill credentials \"Xpto@msn.com\" and \"\"",
             "result": {
               "status": "passed",
-              "duration": 419000000
+              "duration": 425000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "I see the \"error\" messagem \"Senha inválida.\"",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           }
         ]

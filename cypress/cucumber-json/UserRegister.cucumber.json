@@ -23,7 +23,7 @@
             "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
             "result": {
               "status": "passed",
-              "duration": 1617000000
+              "duration": 4813000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I register the user \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\".",
             "result": {
               "status": "passed",
-              "duration": 2252000000
+              "duration": 2616000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I see the \"already-existent\" user register messagem \"Warning: E-Mail Address is already registered!\"",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 19000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I double check in data register with \"already-existent\".",
             "result": {
               "status": "passed",
-              "duration": 3955000000
+              "duration": 3474000000
             }
           }
         ]
@@ -73,7 +73,7 @@
             "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
             "result": {
               "status": "passed",
-              "duration": 921000000
+              "duration": 892000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I register the user \"\", \"\",\"\",\"\",\"\".",
             "result": {
               "status": "passed",
-              "duration": 2868000000
+              "duration": 2687000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I see the \"non-existent\" user register messagem \"Your Account Has Been Created!\"",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 633000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I double check in data register with \"non-existent\".",
             "result": {
               "status": "passed",
-              "duration": 1317000000
+              "duration": 1136000000
             }
           }
         ]
