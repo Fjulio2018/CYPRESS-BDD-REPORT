@@ -20,6 +20,7 @@ const mergedEnvConfig = {
 
 module.exports = defineConfig({
   env: mergedEnvConfig,
+  projectId: 'dny4ex',
   e2e: {
     baseUrl: mergedEnvConfig.Base_URI_OPENCART || mergedEnvConfig.Base_URI_QAZANDO, // Use o valor carregado ou um valor padrão
     specPattern: '**/*.feature',
