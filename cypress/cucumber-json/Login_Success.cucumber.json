@@ -2,14 +2,14 @@
   {
     "description": "Feature Description:\nAs a client\nI want to log in to the application\nTo shop online",
     "keyword": "Feature",
-    "name": "Login Success",
+    "name": "QAzando Successful Login Scenarios",
     "line": 1,
-    "id": "login-success",
+    "id": "qazando-successful-login-scenarios",
     "tags": [],
     "uri": "Login_Success.feature",
     "elements": [
       {
-        "id": "login-success;login-with-sucess",
+        "id": "qazando-successful-login-scenarios;login-with-sucess",
         "keyword": "Scenario",
         "line": 12,
         "name": "Login with sucess",
@@ -23,7 +23,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 1067000000
+              "duration": 1002000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "fill \"email\" field with \"Xpto@msn.com\"",
             "result": {
               "status": "passed",
-              "duration": 363000000
+              "duration": 377000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "fill \"password\" field with \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 153000000
+              "duration": 141000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I click on Login",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 72000000
             }
           },
           {
@@ -69,7 +69,7 @@
         ]
       },
       {
-        "id": "login-success;login-success-validation",
+        "id": "qazando-successful-login-scenarios;login-success-validation",
         "keyword": "Scenario",
         "line": 27,
         "name": "Login Success Validation",
@@ -83,7 +83,7 @@
             "name": "I am on the login screen from \"Base_URI_QAZANDO\"",
             "result": {
               "status": "passed",
-              "duration": 580000000
+              "duration": 591000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I fill credentials \"Xpto@msn.com\" and \"@123$4xp\"",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 562000000
             }
           },
           {

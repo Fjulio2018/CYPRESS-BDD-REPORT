@@ -1,4 +1,4 @@
-Feature: Login Failed
+Feature: QAzando Login Failure Scenarios
 
 Feature Description:
 As a client

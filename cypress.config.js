@@ -27,6 +27,30 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber());
 
+      // Função para garantir que a pasta de destino exista
+      function ensureDirectoryExistence(dirPath) {
+        if (!fs.existsSync(dirPath)) {
+          fs.mkdirSync(dirPath, { recursive: true });
+        }
+      }
+
+      // Caminho da pasta onde as datas serão salvas
+      const reportDir = path.resolve('cypress/reports');
+
+      // Salvar a data de início quando os testes começarem
+      on('before:run', () => {
+        ensureDirectoryExistence(reportDir); // Garantir que a pasta exista
+        const startTime = new Date();
+        fs.writeFileSync(path.join(reportDir, 'start-time.txt'), startTime.toISOString());
+      });
+
+      // Salvar a data de fim quando os testes terminarem
+      on('after:run', () => {
+        ensureDirectoryExistence(reportDir); // Garantir que a pasta exista
+        const endTime = new Date();
+        fs.writeFileSync(path.join(reportDir, 'end-time.txt'), endTime.toISOString());
+      });
+
       // Definir as tarefas personalizadas
       on('task', {
         loadUserData(fileName) {
@@ -42,8 +66,6 @@ module.exports = defineConfig({
           return null; // O retorno pode ser qualquer valor, pois não há valor específico para retornar
         },
       });
-
-      // Você pode adicionar outras configurações de eventos aqui, se necessário
     },
   },
 });

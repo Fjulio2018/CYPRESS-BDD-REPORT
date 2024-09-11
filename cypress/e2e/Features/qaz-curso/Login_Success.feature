@@ -1,4 +1,4 @@
-Feature: Login Success
+Feature: QAzando Successful Login Scenarios
 
 Feature Description:
 As a client
