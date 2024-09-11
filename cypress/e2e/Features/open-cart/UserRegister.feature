@@ -1,4 +1,4 @@
-Feature: Register user on site
+Feature: Open-Cart Successful Register Scenarios
 
 Feature Description:
 As a client

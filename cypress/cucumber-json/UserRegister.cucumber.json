@@ -2,14 +2,14 @@
   {
     "description": "Feature Description:\nAs a client\nI want register on aplication\nTo shop online",
     "keyword": "Feature",
-    "name": "Register user on site",
+    "name": "Open-Cart Successful Register Scenarios",
     "line": 1,
-    "id": "register-user-on-site",
+    "id": "open-cart-successful-register-scenarios",
     "tags": [],
     "uri": "UserRegister.feature",
     "elements": [
       {
-        "id": "register-user-on-site;user-register-validation",
+        "id": "open-cart-successful-register-scenarios;user-register-validation",
         "keyword": "Scenario",
         "line": 20,
         "name": "User Register Validation",
@@ -23,7 +23,7 @@
             "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
             "result": {
               "status": "passed",
-              "duration": 4813000000
+              "duration": 4508000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I register the user \"First q\", \"last    q\",\"XptoqFL@msn.com\",\"@123$4xp\",\"55199944462\".",
             "result": {
               "status": "passed",
-              "duration": 2616000000
+              "duration": 2519000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I see the \"already-existent\" user register messagem \"Warning: E-Mail Address is already registered!\"",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 16000000
             }
           },
           {
@@ -53,13 +53,13 @@
             "name": "I double check in data register with \"already-existent\".",
             "result": {
               "status": "passed",
-              "duration": 3474000000
+              "duration": 3671000000
             }
           }
         ]
       },
       {
-        "id": "register-user-on-site;user-register-validation",
+        "id": "open-cart-successful-register-scenarios;user-register-validation",
         "keyword": "Scenario",
         "line": 21,
         "name": "User Register Validation",
@@ -73,7 +73,7 @@
             "name": "I am on the register screen from \"REGISTER_URI_OPENCART\"",
             "result": {
               "status": "passed",
-              "duration": 892000000
+              "duration": 929000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I register the user \"\", \"\",\"\",\"\",\"\".",
             "result": {
               "status": "passed",
-              "duration": 2687000000
+              "duration": 2736000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I see the \"non-existent\" user register messagem \"Your Account Has Been Created!\"",
             "result": {
               "status": "passed",
-              "duration": 633000000
+              "duration": 601000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I double check in data register with \"non-existent\".",
             "result": {
               "status": "passed",
-              "duration": 1136000000
+              "duration": 1127000000
             }
           }
         ]
